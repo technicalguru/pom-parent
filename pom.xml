@@ -17,6 +17,12 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+	<scm>
+		<connection>scm:svn:https://h2031995.stratoserver.net/svn/OSS/eu.ralph-schuster.pom-oss/trunk</connection>
+		<developerConnection>scm:svn:https://h2031995.stratoserver.net/svn/OSS/eu.ralph-schuster.pom-oss/trunk</developerConnection>
+		<url>https://h2031995.stratoserver.net/svn/OSS/eu.ralph-schuster.pom-oss/trunk</url>
+	</scm>
+
 	<issueManagement>
 		<system>Jira</system>
 		<url>http://jira.ralph-schuster.eu/</url>

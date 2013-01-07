@@ -153,6 +153,7 @@
 				<version>2.3</version>
 				<configuration>
 					<appendAssemblyId>false</appendAssemblyId>
+					<attach>false</attach>
 					<descriptors>
 						<descriptor>src/assembly/distribution.xml</descriptor>
 					</descriptors>

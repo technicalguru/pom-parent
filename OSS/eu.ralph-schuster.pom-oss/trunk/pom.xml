@@ -8,7 +8,7 @@
 
 	<groupId>eu.ralph-schuster</groupId>
 	<artifactId>pom-oss</artifactId>
-	<version>1.2.0-SNAPSHOT</version>
+	<version>1.2.0</version>
 	<packaging>pom</packaging>
 	<name>OSS POM Parent</name>
 
@@ -17,9 +17,9 @@
 	</properties>
 
 	<scm>
-		<connection>scm:svn:https://h2031995.stratoserver.net/svn/OSS/eu.ralph-schuster.pom-oss/trunk</connection>
-		<developerConnection>scm:svn:https://h2031995.stratoserver.net/svn/OSS/eu.ralph-schuster.pom-oss/trunk</developerConnection>
-		<url>https://h2031995.stratoserver.net/svn/OSS/eu.ralph-schuster.pom-oss/trunk</url>
+		<connection>scm:svn:https://h2031995.stratoserver.net/svn/OSS/eu.ralph-schuster.pom-oss/tags/pom-oss-1.2.0</connection>
+		<developerConnection>scm:svn:https://h2031995.stratoserver.net/svn/OSS/eu.ralph-schuster.pom-oss/tags/pom-oss-1.2.0</developerConnection>
+		<url>https://h2031995.stratoserver.net/svn/OSS/eu.ralph-schuster.pom-oss/tags/pom-oss-1.2.0</url>
 	</scm>
 
 	<issueManagement>

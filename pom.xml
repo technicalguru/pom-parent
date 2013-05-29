@@ -318,4 +318,5 @@
 		</plugins>
 	</reporting>
 
+	<description>The OSS POM Parent for eu.ralph-schuster projects</description>
 </project>

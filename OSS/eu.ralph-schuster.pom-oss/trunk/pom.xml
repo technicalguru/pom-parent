@@ -129,6 +129,9 @@
 						<goals>
 							<goal>jar</goal>
 						</goals>
+						<configuration>
+							<detectLinks>true</detectLinks>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>

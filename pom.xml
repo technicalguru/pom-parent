@@ -109,7 +109,7 @@
 					<dependency>
 						<groupId>org.tmatesoft.svnkit</groupId>
 						<artifactId>svnkit</artifactId>
-						<version>1.8.7</version>
+						<version>1.8.9</version>
 					</dependency>
 				</dependencies>
 			</plugin>
@@ -131,10 +131,11 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.10.1</version>
+				<version>2.10.3</version>
 				<configuration>
 					<detectLinks>true</detectLinks>
 					<header><![CDATA[<a href="${project.home}" target="_new">Visit the ${project.name} Homepage</a>]]></header>
+					<failOnError>false</failOnError>
 				</configuration>
 				<executions>
 					<execution>
@@ -253,10 +254,11 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.10.1</version>
+				<version>2.10.3</version>
 				<configuration>
 					<detectLinks>true</detectLinks>
 					<header><![CDATA[<a href="${project.home}" target="_new">Visit the ${project.name} Homepage</a>]]></header>
+					<failOnError>false</failOnError>
 				</configuration>
 				<reportSets>
 					<reportSet><!-- by default, id = "default" -->

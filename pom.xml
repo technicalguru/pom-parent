@@ -8,7 +8,7 @@
 
 	<groupId>eu.ralph-schuster</groupId>
 	<artifactId>pom-oss</artifactId>
-	<version>1.4.6-SNAPSHOT</version>
+	<version>1.5.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>OSS POM Parent</name>
 	<description>The OSS POM Parent for eu.ralph-schuster projects</description>
@@ -21,9 +21,9 @@
 	</properties>
 
 	<scm>
-		<connection>scm:svn:https://svn.ralph-schuster.eu/svn/OSS/eu.ralph-schuster.pom-oss/trunk</connection>
-		<developerConnection>scm:svn:https://svn.ralph-schuster.eu/svn/OSS/eu.ralph-schuster.pom-oss/trunk</developerConnection>
-		<url>https://svn.ralph-schuster.eu/svn/OSS/eu.ralph-schuster.pom-oss/trunk</url>
+		<connection>scm:git:https://github.com/technicalguru/pom-parent.git</connection>
+		<developerConnection>scm:git:https://github.com/technicalguru/pom-parent.git</developerConnection>
+		<url>https://github.com/technicalguru/pom-parent</url>
 	</scm>
 
 	<issueManagement>
@@ -76,7 +76,7 @@
 			</testResource>
 		</testResources>
 		<plugins>
-			<!-- Compile for Java 1.6 -->
+			<!-- Compile for Java 1.8 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -85,33 +85,6 @@
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
-			</plugin>
-			<!-- Provide SVN revision information -->
-			<plugin>
-				<groupId>com.google.code.maven-svn-revision-number-plugin</groupId>
-				<artifactId>svn-revision-number-maven-plugin</artifactId>
-				<version>1.13</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>revision</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<entries>
-						<entry>
-							<prefix>svn</prefix>
-						</entry>
-					</entries>
-				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>org.tmatesoft.svnkit</groupId>
-						<artifactId>svnkit</artifactId>
-						<version>1.8.12</version>
-					</dependency>
-				</dependencies>
 			</plugin>
 			<!-- Package sources -->
 			<plugin>
@@ -145,6 +118,7 @@
 						</goals>
 						<configuration>
 							<detectLinks>true</detectLinks>
+							<failOnError>false</failOnError>
 							<header><![CDATA[<a href="${project.home}" target="_new">Visit the ${project.name} Homepage</a>]]></header>
 						</configuration>
 					</execution>
@@ -198,31 +172,6 @@
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>
 					<version>1.0.0</version>
-					<configuration>
-						<lifecycleMappingMetadata>
-							<pluginExecutions>
-								<pluginExecution>
-									<pluginExecutionFilter>
-										<groupId>
-											com.google.code.maven-svn-revision-number-plugin
-										</groupId>
-										<artifactId>
-											svn-revision-number-maven-plugin
-										</artifactId>
-										<versionRange>
-											[1.11,)
-										</versionRange>
-										<goals>
-											<goal>revision</goal>
-										</goals>
-									</pluginExecutionFilter>
-									<action>
-										<ignore />
-									</action>
-								</pluginExecution>
-							</pluginExecutions>
-						</lifecycleMappingMetadata>
-					</configuration>
 				</plugin>
 
 				<plugin>

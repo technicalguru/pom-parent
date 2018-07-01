@@ -8,7 +8,7 @@
 
 	<groupId>eu.ralph-schuster</groupId>
 	<artifactId>pom-oss</artifactId>
-	<version>1.5.2-SNAPSHOT</version>
+	<version>1.5.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>OSS POM Parent</name>
 	<description>The OSS POM Parent for eu.ralph-schuster projects</description>
@@ -183,7 +183,7 @@
 						<dependency><!-- add support for ssh/scp -->
 							<groupId>org.apache.maven.wagon</groupId>
 							<artifactId>wagon-ssh</artifactId>
-							<version>3.1</version>
+							<version>3.1.0</version>
 						</dependency>
 					</dependencies>
 				</plugin>

@@ -28,7 +28,7 @@
 
 	<issueManagement>
 		<system>Jira</system>
-		<url>http://jira.ralph-schuster.eu/</url>
+		<url>https://jira.ralph-schuster.eu/</url>
 	</issueManagement>
 
 	<licenses>

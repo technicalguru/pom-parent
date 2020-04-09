@@ -11,7 +11,7 @@ This is the POM parent for OSS projects distributed via Sonatype's OSS Nexus rep
 ```
 
 # Features
-* Java 9 is default dource format
+* Java 9 is default source format
 * Java 9 is default target format
 * Attaching Java sources
 * Attaching Javadoc

@@ -246,6 +246,7 @@
 					<detectLinks>true</detectLinks>
 					<header><![CDATA[<a href="${project.home}" target="_new">Visit the ${project.name} Homepage</a>]]></header>
 					<failOnError>false</failOnError>
+					<detectJavaApiLink>false</detectJavaApiLink>
 				</configuration>
 				<reportSets>
 					<reportSet><!-- by default, id = "default" -->

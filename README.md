@@ -6,12 +6,12 @@ This is the POM parent for OSS projects distributed via Sonatype's OSS Nexus rep
 <parent>
 	<groupId>eu.ralph-schuster</groupId>
 	<artifactId>pom-oss</artifactId>
-	<version>2.0.0</version>
+	<version>2.0.1</version>
 </parent>
 ```
 
 # Features
-* Java 9 is default dource format
+* Java 9 is default source format
 * Java 9 is default target format
 * Attaching Java sources
 * Attaching Javadoc

@@ -3,7 +3,7 @@
 
 	<groupId>eu.ralph-schuster</groupId>
 	<artifactId>pom-oss</artifactId>
-	<version>2.0.1-SNAPSHOT</version>
+	<version>2.0.1</version>
 	<packaging>pom</packaging>
 	<name>OSS POM Parent</name>
 	<description>The OSS POM Parent for eu.ralph-schuster projects</description>
@@ -20,7 +20,7 @@
 		<connection>scm:git:https://github.com/technicalguru/pom-parent.git</connection>
 		<developerConnection>scm:git:https://github.com/technicalguru/pom-parent.git</developerConnection>
 		<url>https://github.com/technicalguru/pom-parent</url>
-		<tag>pom-oss-2.0.0</tag>
+		<tag>pom-oss-2.0.1</tag>
 	</scm>
 
 	<issueManagement>
@@ -166,6 +166,13 @@
 						<goals>
 							<goal>sign</goal>
 						</goals>
+						<configuration>
+							<gpgArguments>
+								<arg>--pinentry-mode</arg>
+								<arg>loopback</arg>
+							</gpgArguments>
+							<passphraseServerId>${gpg.keyname}</passphraseServerId>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
@@ -175,7 +182,7 @@
 				<!-- NOTE: We don't need a groupId specification because the group is 
 					org.apache.maven.plugins ...which is assumed by default. -->
 				<artifactId>maven-assembly-plugin</artifactId>
-				<version>3.2.0</version>
+				<version>3.3.0</version>
 				<configuration>
 					<appendAssemblyId>false</appendAssemblyId>
 					<attach>false</attach>
@@ -213,7 +220,7 @@
 						<dependency><!-- add support for ssh/scp -->
 							<groupId>org.apache.maven.wagon</groupId>
 							<artifactId>wagon-ssh</artifactId>
-							<version>3.3.4</version>
+							<version>3.4.1</version>
 						</dependency>
 					</dependencies>
 				</plugin>
@@ -261,7 +268,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-project-info-reports-plugin</artifactId>
-				<version>3.0.0</version>
+				<version>3.1.0</version>
 			</plugin>
 
 			<!-- Issue Tracking Report -->

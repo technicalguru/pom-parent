@@ -23,11 +23,6 @@
 		<tag>v2.0.2</tag>
 	</scm>
 
-	<issueManagement>
-		<system>Jira</system>
-		<url>https://jira.ralph-schuster.eu/</url>
-	</issueManagement>
-
 	<licenses>
 		<license>
 			<name>GNU Lesser General Public License 3.0</name>

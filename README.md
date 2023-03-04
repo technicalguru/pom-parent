@@ -6,13 +6,13 @@ This is the POM parent for OSS projects distributed via Sonatype's OSS Nexus rep
 <parent>
 	<groupId>eu.ralph-schuster</groupId>
 	<artifactId>pom-oss</artifactId>
-	<version>2.1.0</version>
+	<version>2.2.0</version>
 </parent>
 ```
 
 # Features
-* Java 11 is default source format
-* Java 11 is default target format
+* Java 17 is default source format
+* Java 17 is default target format
 * Attaching Java sources
 * Attaching Javadoc
 * Signing artifacts

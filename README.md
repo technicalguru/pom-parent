@@ -6,7 +6,7 @@ This is the POM parent for OSS projects distributed via Sonatype's OSS Nexus rep
 <parent>
 	<groupId>eu.ralph-schuster</groupId>
 	<artifactId>pom-oss</artifactId>
-	<version>2.2.0</version>
+	<version>3.0.2</version>
 </parent>
 ```
 
@@ -25,7 +25,7 @@ This is the POM parent for OSS projects distributed via Sonatype's OSS Nexus rep
     * Issue tracking report (from JIRA)
     * NCSS report
     * Tag list report
-* Publishing Maven Site to [downloads.ralph-schuster.eu]
+* JUnit 5 included in build by default
 
 # License
 Licensed under [GNU LGPL](LICENSE.md).

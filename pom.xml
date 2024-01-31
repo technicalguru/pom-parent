@@ -3,7 +3,7 @@
 
 	<groupId>eu.ralph-schuster</groupId>
 	<artifactId>pom-oss</artifactId>
-	<version>3.0.1</version>
+	<version>3.0.2</version>
 	<packaging>pom</packaging>
 	<name>OSS POM Parent</name>
 	<description>The OSS POM Parent for eu.ralph-schuster projects</description>
@@ -21,7 +21,7 @@
 		<developerConnection>
 			scm:git:https://github.com/technicalguru/pom-parent.git</developerConnection>
 		<url>https://github.com/technicalguru/pom-parent</url>
-		<tag>pom-oss-3.0.1</tag>
+		<tag>pom-oss-3.0.2</tag>
 	</scm>
 
 	<licenses>
@@ -177,6 +177,13 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+
+			<!-- Added to make sure the JUnit 5 will be picked up -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.2.5</version>
 			</plugin>
 
 		</plugins>

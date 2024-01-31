@@ -179,7 +179,7 @@
 				</executions>
 			</plugin>
 
-			<!-- Added to meke sure the JUnit 5 will be picked up -->
+			<!-- Added to make sure the JUnit 5 will be picked up -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>

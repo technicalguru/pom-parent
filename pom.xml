@@ -3,7 +3,7 @@
 
 	<groupId>eu.ralph-schuster</groupId>
 	<artifactId>pom-oss</artifactId>
-	<version>3.0.2</version>
+	<version>3.0.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>OSS POM Parent</name>
 	<description>The OSS POM Parent for eu.ralph-schuster projects</description>
@@ -21,7 +21,7 @@
 		<developerConnection>
 			scm:git:https://github.com/technicalguru/pom-parent.git</developerConnection>
 		<url>https://github.com/technicalguru/pom-parent</url>
-		<tag>pom-oss-3.0.2</tag>
+		<tag>v2.2.0</tag>
 	</scm>
 
 	<licenses>

@@ -3,7 +3,7 @@
 
 	<groupId>eu.ralph-schuster</groupId>
 	<artifactId>pom-oss</artifactId>
-	<version>21.0.0</version>
+	<version>21.1.0</version>
 	<packaging>pom</packaging>
 	<name>OSS POM Parent for Java 21</name>
 	<description>The OSS POM Parent for eu.ralph-schuster projects</description>
@@ -20,7 +20,7 @@
 		<connection>scm:git:https://github.com/technicalguru/pom-parent.git</connection>
 		<developerConnection>scm:git:https://github.com/technicalguru/pom-parent.git</developerConnection>
 		<url>https://github.com/technicalguru/pom-parent</url>
-		<tag>pom-oss-21.0.0</tag>
+		<tag>pom-oss-21.1.0</tag>
 	</scm>
 
 	<licenses>
@@ -41,9 +41,9 @@
 
 	<repositories>
 		<repository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>Sonatype Nexus Snapshots</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<id>central</id>
+			<name>Central Snapshots</name>
+			<url>https://central.sonatype.com</url>
 			<releases>
 				<enabled>false</enabled>
 			</releases>
@@ -52,19 +52,6 @@
 			</snapshots>
 		</repository>
 	</repositories>
-
-	<distributionManagement>
-		<snapshotRepository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>Sonatype Nexus Snapshots</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-		</snapshotRepository>
-		<repository>
-			<id>sonatype-nexus-staging</id>
-			<name>Nexus Release Repository</name>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-	</distributionManagement>
 
 	<dependencies>
 		<dependency>
@@ -159,7 +146,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-gpg-plugin</artifactId>
-				<version>3.2.4</version>
+				<version>3.2.6</version>
 				<executions>
 					<execution>
 						<id>sign-artifacts</id>
@@ -183,6 +170,18 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.3.1</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.sonatype.central</groupId>
+				<artifactId>central-publishing-maven-plugin</artifactId>
+				<version>0.7.0</version>
+				<extensions>true</extensions>
+				<configuration>
+					<publishingServerId>central</publishingServerId>
+					<autoPublish>true</autoPublish>
+					<waitUntil>published</waitUntil>
+				</configuration>
 			</plugin>
 
 		</plugins>

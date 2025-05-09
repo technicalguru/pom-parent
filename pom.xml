@@ -41,11 +41,11 @@
 
 	<repositories>
 		<repository>
-			<id>central</id>
+			<id>sonatype-nexus-snapshots</id>
 			<name>Central Snapshots</name>
 			<url>https://central.sonatype.com</url>
 			<releases>
-				<enabled>false</enabled>
+				<enabled>true</enabled>
 			</releases>
 			<snapshots>
 				<enabled>true</enabled>
@@ -180,7 +180,6 @@
 				<configuration>
 					<publishingServerId>central</publishingServerId>
 					<autoPublish>true</autoPublish>
-					<waitUntil>published</waitUntil>
 				</configuration>
 			</plugin>
 

@@ -20,7 +20,7 @@
 		<connection>scm:git:https://github.com/technicalguru/pom-parent.git</connection>
 		<developerConnection>scm:git:https://github.com/technicalguru/pom-parent.git</developerConnection>
 		<url>https://github.com/technicalguru/pom-parent</url>
-		<tag>v21.3.3</tag>
+		<tag>v21.3.4</tag>
 	</scm>
 
 	<licenses>
